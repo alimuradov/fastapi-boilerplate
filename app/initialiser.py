@@ -1,10 +1,10 @@
-from app.database.initialise import initialise
+from app.database.initialise import init_db
 from app.database.session import SessionLocal
 
 
 def init() -> None:
     db = SessionLocal()
-    initialise(db)
+    init_db(db)
 
 
 def main() -> None:

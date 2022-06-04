@@ -10,13 +10,18 @@ pytest = "*"
 [packages]
 fastapi = "*"
 alembic = "*"
-uvicorn = "*"
+uvicorn = {extras = ["standard"], version = "*"}
 sqlalchemy = "*"
-pydantic = "*"
+pydantic = {extras = ["email"], version = "*"}
 psycopg2-binary = "*"
 python-multipart = "*"
 requests = "*"
 python-dotenv = "*"
+python-jose = "*"
+passlib = {extras = ["bcrypt"], version = "*"}
+emails = "*"
+sse-starlette = "*"
+asyncio = "*"
 
 [requires]
 python_version = "3.8"
